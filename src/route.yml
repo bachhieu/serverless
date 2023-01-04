@@ -1,0 +1,11 @@
+first:
+  name: first
+  handler: first
+  events:
+    - http: yes
+
+second:
+  name: second
+  handler: second
+  events:
+    - http: yes

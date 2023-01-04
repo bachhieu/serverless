@@ -1,0 +1,49 @@
+# openapi2-functions.yaml
+swagger: '2.0'
+info:
+  title: open-api demo
+  description: Sample API on API Gateway with a Google Cloud Functions backend
+  version: 1.0.0
+schemes:
+  - https
+produces:
+  - application/json
+paths:
+# reference: https://cloud.google.com/endpoints/docs/openapi/openapi-extensions
+##########################################
+# /hello/{id}:
+#   post:
+#     summary: hello
+#     operationId: hello
+#     consumes:
+#       - application/json
+#     produces:
+#       - application/json
+#     parameters:
+#       - name: id
+#         in: path
+#         description: id
+#         required: true
+#         type: string
+#     x-google-backend:
+#       address: https://us-central1-serverless-test-hieu.cloudfunctions.net
+#       jwt_audience: https://us-central1-serverless-test-hieu.cloudfunctions.net/hello
+#       path_translation: APPEND_PATH_TO_ADDRESS
+#     responses:
+#       '200':
+#         description: A successful response
+#         schema:
+#           type: string
+
+# /first:
+#   post:
+#     summary: first
+#     operationId: first
+#     x-google-backend:
+#       address: https://us-central1-serverless-test-hieu.cloudfunctions.net
+#     responses:
+#       '200':
+#         description: A successful response
+#         schema:
+#           type: string
+
